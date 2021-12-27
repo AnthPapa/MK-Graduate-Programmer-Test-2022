@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &71736283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+  m_PrefabInstance: {fileID: 1481304513770295303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100612447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,6 +156,34 @@ PrefabInstance:
     - target: {fileID: 1481304512737107136, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Color.r
       value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1054094511}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GreenOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StroopScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107138, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -250,8 +289,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonGreen
       objectReference: {fileID: 0}
+    - target: {fileID: 1481304514097837123, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_text
+      value: Green
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+--- !u!114 &172484901 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+  m_PrefabInstance: {fileID: 865880201}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &337098360
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +538,34 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.52156866
       objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1054094511}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BlueOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StroopScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107138, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -588,8 +670,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 1481304514097837123, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_text
+      value: Blue
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+--- !u!114 &952423523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+  m_PrefabInstance: {fileID: 1677821660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1054094509
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1054094510}
+  - component: {fileID: 1054094511}
   m_Layer: 0
   m_Name: PlayGame
   m_TagString: Untagged
@@ -622,6 +720,28 @@ Transform:
   m_Father: {fileID: 1280087236}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054094511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054094509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a438b43618dcd541af5f5557fc7ffdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stroop: {fileID: 1136071353}
+  stroopAmount: 10
+  redButton: {fileID: 952423523}
+  greenButton: {fileID: 1828227206}
+  blueButton: {fileID: 172484901}
+  yellowButton: {fileID: 71736283}
+  scoreText: {fileID: 0}
+  timeText: {fileID: 0}
+  time: 0
+  restart: {fileID: 0}
 --- !u!224 &1116262073 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
@@ -705,7 +825,7 @@ GameObject:
   - component: {fileID: 1136071354}
   - component: {fileID: 1136071353}
   m_Layer: 5
-  m_Name: (TMP)Stroop
+  m_Name: (TMP)StroopText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,8 +879,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287557372
-  m_fontColor: {r: 0.9882353, g: 0.93333334, b: 0.5568628, a: 1}
+    rgba: 4291272185
+  m_fontColor: {r: 0.9764706, g: 0.6156863, b: 0.78039217, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1249,10 +1369,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1225424745}
-  - {fileID: 1184287940}
+  - {fileID: 1678841461}
   - {fileID: 1218633301}
   - {fileID: 1116262073}
-  - {fileID: 1678841461}
+  - {fileID: 1184287940}
   m_Father: {fileID: 1054094510}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1274,6 +1394,34 @@ PrefabInstance:
     - target: {fileID: 1481304512737107136, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Color.r
       value: 0.95686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1054094511}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RedOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StroopScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107138, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1301,7 +1449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1357,11 +1505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 687.1914
+      value: -697.1086
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -176.84344
+      value: -177
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1378,6 +1526,10 @@ PrefabInstance:
     - target: {fileID: 1481304512737107140, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Name
       value: ButtonRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304514097837123, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_text
+      value: Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
@@ -1525,6 +1677,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765065821}
   m_CullTransparentMesh: 1
+--- !u!114 &1828227206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+  m_PrefabInstance: {fileID: 100612447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911189779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,15 +2079,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107136, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Color.b
-      value: 0.78039217
+      value: 0.5568628
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107136, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Color.g
-      value: 0.6156863
+      value: 0.9333334
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107136, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Color.r
-      value: 0.9764706
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1054094511}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: YellowOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StroopScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304512737107137, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107138, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1944,7 +2135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1980,7 +2171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 382.91635
+      value: 417.38324
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2000,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -699.8086
+      value: 687.1914
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107139, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2020,7 +2211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481304512737107140, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
       propertyPath: m_Name
-      value: ButtonPink
+      value: ButtonYellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481304514097837123, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
+      propertyPath: m_text
+      value: Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a983d8ec355f5bc43ba91686b4121336, type: 3}
