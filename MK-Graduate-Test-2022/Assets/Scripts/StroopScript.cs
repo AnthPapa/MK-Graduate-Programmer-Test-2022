@@ -14,27 +14,27 @@ public class StroopScript : MonoBehaviour
     private Color32 stroopColour;
 
     public Button redButton, greenButton, blueButton, yellowButton;
+    public Button restart;
     private bool pressed;
-
-    private int score;
-
     private bool redBtnPress = false;
     private bool blueBtnPress = false;
     private bool greenBtnPress = false;
     private bool yellowBtnPress = false;
 
-    public TextMeshProUGUI scoreText;
-
+    private int score;
     public TextMeshProUGUI timeText;
     public float time;
+    private bool timerActive;
 
 
-    public Button restart;
-    private bool restartPressed;
+    public TextMeshProUGUI scoreText;
+
+    
 
     public GameObject playGameUI;
     public GameObject ResultsUI;
-    // Start is called before the first frame update
+
+
 
     void Start()
     {
@@ -45,12 +45,15 @@ public class StroopScript : MonoBehaviour
         blueButton.onClick.AddListener(ButtonOnClick);
         greenButton.onClick.AddListener(ButtonOnClick);
         yellowButton.onClick.AddListener(ButtonOnClick);
-        StartCoroutine(display());
+        StartCoroutine(Stroop());
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (timerActive)
+        {
+            time += Time.deltaTime;      
+        }
 
     }
     public void Restartbtn()
@@ -58,35 +61,34 @@ public class StroopScript : MonoBehaviour
         ResultsUI.gameObject.SetActive(false);
         playGameUI.gameObject.SetActive(true);
         score = 0;
+        StartCoroutine(Stroop());
     }
+    //----------------Button Press Checks----------------//
     public void RedOnClick()
     {
         redBtnPress = true;
     }
-
     public void BlueOnClick()
     {
         blueBtnPress = true;
     }
-
     public void GreenOnClick()
     {
         greenBtnPress = true;
     }
-
     public void YellowOnClick()
     {
         yellowBtnPress = true;
     }
-
     void ButtonOnClick()
     {
         pressed = true;
     }
-    IEnumerator display()
+    //----------------End----------------//
+    IEnumerator Stroop()
     {
         yield return new WaitForSeconds(2.0f);
-
+        time = 0.00f;
         Color32 red = new Color32(244, 132, 116, 255);
         Color32 blue = new Color32(133, 232, 255, 255);
         Color32 green = new Color32(92, 247, 155, 255);
@@ -95,16 +97,14 @@ public class StroopScript : MonoBehaviour
         for (int i = 0; i < stroopAmount; i++)
         {
             stroop.text = coloursText[Random.Range(0, coloursText.Length)];
-
             stroopColour = colours[Random.Range(0, colours.Length)];
-
             stroop.color = stroopColour;
-
+            timerActive = true;
             //Debug.Log(stroopColour);
 
-            //yield return new WaitForSeconds(2.0f);
             yield return new WaitUntil(() => pressed == true);
 
+    //----------------Button Colour Checks----------------//
             if (stroopColour.CompareRGB(red))
             {
                 if (redBtnPress == true)
@@ -131,7 +131,6 @@ public class StroopScript : MonoBehaviour
                 }
             }
             blueBtnPress = false;
-
             if (stroopColour.CompareRGB(green))
             {
                 if (greenBtnPress == true)
@@ -159,14 +158,23 @@ public class StroopScript : MonoBehaviour
             }
             yellowBtnPress = false;
             pressed = false;
+    //----------------End----------------//
+
             if (i == stroopAmount - 1)
             {
+                Cursor.lockState = CursorLockMode.Locked;
                 Debug.Log("max amount");
+                timerActive = false;
                 yield return new WaitForSeconds(1f);
                 ResultsUI.gameObject.SetActive(true);
                 playGameUI.gameObject.SetActive(false);
-                scoreText.text = "Score: " + score.ToString();
-                i = 0;
+                scoreText.text = "Score: " + score.ToString() + " / " + stroopAmount;
+                timeText.text = "Time: " + time.ToString("F2");
+
+                stroop.text = "Stroop";
+                stroop.color = new Color32(249, 157, 199, 255);
+                Cursor.lockState = CursorLockMode.None;
+                break;
             }
         }
     }
