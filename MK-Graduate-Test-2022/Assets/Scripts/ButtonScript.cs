@@ -6,23 +6,23 @@ using UnityEngine.SceneManagement;
 public class ButtonScript : MonoBehaviour
 {
     public AudioSource audioSource;
-    public AudioClip btnHover;
-    public AudioClip btnClick;
+    [SerializeField]
+    public AudioClip btnHoverMenu, btnHoverGame, btnClick;
 
-    public GameObject howToPlayUI;
-    public GameObject mainMenuUI;
+    [SerializeField]
+    private GameObject howToPlayUI, mainMenuUI, settingsUI;
 
     void Start()
     {
         // Create a temporary reference to the current scene.
         Scene currentScene = SceneManager.GetActiveScene();
 
-        // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
         if (sceneName == "MainMenuScene")
         {
             howToPlayUI.gameObject.SetActive(false);
+            settingsUI.gameObject.SetActive(false);
             mainMenuUI.gameObject.SetActive(true);
         }
     }
@@ -30,7 +30,11 @@ public class ButtonScript : MonoBehaviour
     //----------------Audio----------------//
     public void OnHover()
     {
-        audioSource.PlayOneShot(btnHover);
+        audioSource.PlayOneShot(btnHoverMenu);
+    }
+    public void OnHover2()
+    {
+        audioSource.PlayOneShot(btnHoverGame);
     }
     public void OnClick()
     {
@@ -38,6 +42,10 @@ public class ButtonScript : MonoBehaviour
     }
 
     //----------------ChangeUIPanels----------------//
+    public void settingsClick()
+    {
+        StartCoroutine(IsettingsClick());
+    }
     public void howToPlayClick()
     {
         StartCoroutine(IhowToPlayClick());
@@ -45,6 +53,12 @@ public class ButtonScript : MonoBehaviour
     public void MenuClick()
     {
         StartCoroutine(IMenuClick());
+    }
+    IEnumerator IsettingsClick()
+    {
+        yield return new WaitForSeconds(0.3f);
+        settingsUI.gameObject.SetActive(true);
+        mainMenuUI.gameObject.SetActive(false);
     }
     IEnumerator IhowToPlayClick()
     {
@@ -56,6 +70,7 @@ public class ButtonScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         howToPlayUI.gameObject.SetActive(false);
+        settingsUI.gameObject.SetActive(false);
         mainMenuUI.gameObject.SetActive(true);
     }
 
